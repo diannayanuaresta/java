@@ -1,0 +1,11 @@
+{
+    "java.project.sourcePaths": [
+        "Latian02/src",
+        "Latian01/src",
+        "Latian02/lib"
+    ],
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\resta\\Downloads\\mysql-connector-java-8.0.28\\mysql-connector-java-8.0.28\\mysql-connector-java-8.0.28.jar"
+    ]
+}
