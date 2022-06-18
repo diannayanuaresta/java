@@ -4,6 +4,8 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.event.*;
+
+import cetakBarang06425.CetakBarang06425;
 import fBarang06425.*;
 import fPegawai06425.*;
 import fJual06425.*;
@@ -56,13 +58,13 @@ class fMenu06425 extends JFrame {
 
         JMenuItem M12Stok = new JMenuItem("Stock Minim");
         M12Stok.setMnemonic('M');
-        M12Stok.setEnabled(false);
+        M12Stok.setEnabled(true);
         M12Stok.setAccelerator(KeyStroke.getKeyStroke("control M"));
 
         // sub menu (M2) Transaksi.....................................
         JMenuItem M21Pengadaan = new JMenuItem("PengaDaan");
         M21Pengadaan.setMnemonic('D');
-        M21Pengadaan.setEnabled(false);
+        M21Pengadaan.setEnabled(true);
         M21Pengadaan.setAccelerator(KeyStroke.getKeyStroke("control D"));
 
         JMenuItem M22Penjualan = new JMenuItem("PenJualan");
@@ -161,8 +163,8 @@ class fMenu06425 extends JFrame {
 
     class Laporan implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            // CetakBrg05049 xLaporan = new CetakBrg05049();
-            // xLaporan.setVisible(true);
+            CetakBarang06425 xLaporan = new CetakBarang06425();
+            xLaporan.setVisible(true);
         }
     }
 
